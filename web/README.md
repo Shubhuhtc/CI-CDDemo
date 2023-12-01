@@ -9,7 +9,7 @@ Setup is as simple as:
 ```bash
 npm install
 # Run unit tests 
-npm run test
+npm run test  
 # Run the app
 npm run start
 ```
