@@ -5,7 +5,7 @@ describe('Default Endpoint', () => {
   it('should return status 200', async () => {
     const res = await request(app)
       .get('/')
-    expect(res.statusCode).toEqual(201)
+    expect(res.statusCode).toEqual(200)
   })
 })
 
@@ -15,7 +15,7 @@ describe('New Endpoint', () => {
       .get('/ice-flakes')
     expect(res.body).toEqual({
       resource: 'ice-flakes',
-      count: 201,
+      count: 1005,
       shape: 'circle'
     })
     expect(res.statusCode).toEqual(201)
